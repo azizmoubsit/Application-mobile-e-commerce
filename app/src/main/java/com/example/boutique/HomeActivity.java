@@ -139,7 +139,7 @@ public class HomeActivity extends AppCompatActivity {
                 .setOpenableLayout(drawer)
                 .build();
 
-        /*   Slider*/
+        /*   Slider
         sliderView = findViewById(R.id.imageSlider);
         List<Integer> slideList = new ArrayList<>();
         slideList.add(R.drawable.slide);
@@ -147,7 +147,7 @@ public class HomeActivity extends AppCompatActivity {
         slideList.add(R.drawable.slide3);
         SliderAdapter sliderAdapter = new SliderAdapter(slideList);
         sliderView.setSliderAdapter(sliderAdapter);
-
+        */
 
 
     }//**************************End of oncreate ****************************************
