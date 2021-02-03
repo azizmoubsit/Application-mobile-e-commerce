@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+    android:padding="10dp"
+        android:background="#C3DCD9">
+
+        <TextView
+            android:id="@+id/user_name_orders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom et prénom : "
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/order_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_name_orders"
+            android:text="Email : "
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"/>
+    <TextView
+            android:id="@+id/orders_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/order_email"
+            android:text="Téléphone : "
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"/>
+    <TextView
+            android:id="@+id/orders_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orders_phone"
+            android:text="Villle : "
+            android:textColor="@color/black"
+            android:textSize="18sp"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+            android:id="@+id/orders_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orders_city"
+            android:text="Adresse : "
+            android:textColor="@color/black"
+            android:textSize="18sp"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+            android:id="@+id/orders_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orders_address"
+            android:text="La date : "
+            android:textColor="@color/black"
+            android:textSize="18sp"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+            android:id="@+id/orders_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orders_date"
+            android:text="Prix total : "
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+            />
+    <Button
+        android:id="@+id/show_all_products_oreder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Voir les produit du commande"
+        android:background="@drawable/infobutton"
+        android:textColor="@color/white"
+        android:layout_below="@+id/orders_price"
+        />
+
+        <ImageView
+            android:id="@+id/accept_order"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/importedsucces" />
+
+
+</RelativeLayout>

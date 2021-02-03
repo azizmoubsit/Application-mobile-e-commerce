@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:elevation="15dp"
+    app:cardCornerRadius="5dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#C6E2E9">
+
+        <ImageView
+            android:id="@+id/pr_image_cart"
+            android:layout_width="117dp"
+            android:layout_height="100dp" />
+
+        <TextView
+            android:id="@+id/pr_quan_cart"
+            android:layout_width="97dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pr_name_cart"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="35dp"
+            android:padding="10dp"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/pr_name_cart"
+            android:layout_width="213dp"
+            android:layout_height="56dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="9dp"
+            android:layout_marginEnd="34dp"
+            android:layout_toEndOf="@+id/pr_image_cart"
+            android:paddingTop="10dp"
+            android:text="Nom du Produit"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/delete_from_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@android:drawable/ic_delete" />
+
+        <ImageView
+            android:id="@+id/edit_from_cart"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/delete_from_cart"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="0dp"
+            android:src="@drawable/edit" />
+
+        <TextView
+            android:id="@+id/pr_price_cart"
+            android:layout_width="111dp"
+            android:layout_height="44dp"
+            android:layout_below="@+id/pr_name_cart"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="134dp"
+            android:layout_toEndOf="@+id/pr_image_cart"
+            android:padding="10dp"
+            android:text="Prix du Produit"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

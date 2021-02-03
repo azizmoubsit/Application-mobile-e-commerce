@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "780126589861",
+    "project_id": "boutique-ennmou",
+    "storage_bucket": "boutique-ennmou.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:780126589861:android:4382fefa84a218ad4b0e4c",
+        "android_client_info": {
+          "package_name": "com.example.boutique"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "780126589861-lvp9tssvdidsj61p6q4rbid5nru0rcb8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.boutique",
+            "certificate_hash": "3ab169c0fec9b00040849d474fca9e91e0525399"
+          }
+        },
+        {
+          "client_id": "780126589861-ndjtdn7a5pbu3u50h39u39bmn1j77bnm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtsDBBDz5J1-BN35Ioi4_6JRu1tWVDnTE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "780126589861-ndjtdn7a5pbu3u50h39u39bmn1j77bnm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

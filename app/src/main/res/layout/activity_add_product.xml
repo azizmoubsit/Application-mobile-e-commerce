@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddProductActivity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_height="wrap_content"
+        android:id="@+id/app_bar_addprod"
+        android:layout_width="match_parent"
+        android:theme="@style/Theme.Boutique.AppBarOverlay"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_addprod"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#121212"
+            app:popupTheme="@style/Theme.Boutique.PopupOverlay">
+            <ImageView
+                android:id="@+id/close_addprod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="?attr/homeAsUpIndicator"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Ajouter produit"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_marginLeft="40dp"
+                android:textSize="17sp"
+                />
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_below="@+id/app_bar_addprod"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="66dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/noi"
+        android:layout_below="@+id/app_bar_addprod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:text="Ajouter un produit"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardAddprod"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/noi"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        >
+        <RelativeLayout
+            android:id="@+id/prodImg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/input"
+            >
+        <TextView
+            android:id="@+id/importImageText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="17sp"
+            android:text="Importer image"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:paddingLeft="40dp"
+            />
+            <ImageView
+                android:id="@+id/importImageImage"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/importimage"
+                android:contentDescription="Selectionner image" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_below="@+id/cardAddprod"
+        android:id="@+id/spinnerCategories"
+        />
+
+
+    <EditText
+        android:id="@+id/prodName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/spinnerCategories"
+        android:background="@drawable/input"
+        android:hint="Nom du produit.."
+        android:inputType="textMultiLine"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="24dp"
+        />
+
+    <EditText
+        android:id="@+id/prodDesc"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_below="@id/prodName"
+        android:background="@drawable/input"
+        android:hint="Description du produit.."
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/prodPrice"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/prodDesc"
+        android:background="@drawable/input"
+        android:hint="Prix du produit.."
+        android:inputType="number"
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/addNewProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/successbutton"
+        android:text="Ajouter produit"
+        android:layout_below="@+id/prodPrice"
+        android:textColor="@color/white"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="30dp"
+        />
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_height="wrap_content"
+        android:id="@+id/app_bar_setting"
+        android:layout_width="match_parent"
+        android:theme="@style/Theme.Boutique.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_setting"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#121212"
+            app:popupTheme="@style/Theme.Boutique.PopupOverlay">
+            <ImageView
+                android:id="@+id/close_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="?attr/homeAsUpIndicator"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Paramètres"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_marginLeft="40dp"
+                android:textSize="17sp"
+                />
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_below="@+id/app_bar_setting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="66dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+
+    <TextView
+        android:id="@+id/text_update_setting"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/profile"
+        android:layout_below="@id/app_bar_setting"
+        android:text="Modifier votre compte"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_height="20dp"
+        android:id="@+id/textFullname"
+        android:text="Nom et prénom :"
+        android:textColor="@color/black"
+        android:layout_below="@+id/text_update_setting"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_height="50dp"
+        android:hint="@string/fullname"
+        android:id="@+id/name_update_setting"
+        android:layout_below="@+id/textFullname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/input"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textPass"
+        android:text="Mot de passe :"
+        android:textColor="@color/black"
+        android:layout_below="@+id/name_update_setting"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_height="50dp"
+        android:hint="@string/mot_de_passe"
+        android:id="@+id/password_update_setting"
+        android:inputType="textPassword"
+        android:layout_below="@+id/textPass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/input"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textPhone"
+        android:text="Téléphone :"
+        android:textColor="@color/black"
+        android:layout_below="@+id/password_update_setting"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_height="50dp"
+        android:hint="@string/num_ro_de_t_l_phone"
+        android:id="@+id/phone_update_setting"
+        android:layout_below="@+id/textPhone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/input"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textAdr"
+        android:text="Adresse :"
+        android:textColor="@color/black"
+        android:layout_below="@+id/phone_update_setting"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_height="50dp"
+        android:hint="@string/adresse"
+        android:id="@+id/address_update_setting"
+        android:layout_below="@+id/textAdr"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/input"
+        />
+    <Button
+        android:id="@+id/save_setting_btn"
+        android:layout_width="match_parent"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/address_update_setting"
+        android:background="@drawable/successbutton"
+        android:layout_marginTop="16dp"
+        android:text="Mis à jour"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"/>
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

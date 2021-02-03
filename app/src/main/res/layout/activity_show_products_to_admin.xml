@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowProductsToAdminActivity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_height="wrap_content"
+        android:id="@+id/app_bar_seeProd"
+        android:layout_width="match_parent"
+        android:theme="@style/Theme.Boutique.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_seeProd"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#121212"
+            app:popupTheme="@style/Theme.Boutique.PopupOverlay">
+            <ImageView
+                android:id="@+id/close_seeProd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="?attr/homeAsUpIndicator"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Les produits existants"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_marginLeft="40dp"
+                android:textSize="17sp"
+                />
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <Button
+        android:id="@+id/addProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_bar_seeProd"
+        android:background="@drawable/primarybutton"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/fab_margin"
+        android:text="Ajouter nouveau produit"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_menu_see_prod_admin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EAF6FF"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/addProduct"
+        tools:ignore="NotSibling">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmFinalOrderActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_height="wrap_content"
+        android:id="@+id/Apptoolbar"
+        android:layout_width="match_parent"
+        android:theme="@style/Theme.Boutique.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarValider"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#121212"
+            app:popupTheme="@style/Theme.Boutique.PopupOverlay">
+            <ImageView
+                android:id="@+id/back_Valider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="?attr/homeAsUpIndicator"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Valider commandes"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_marginLeft="40dp"
+                android:textSize="17sp"
+                />
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <ScrollView
+        android:layout_below="@+id/Apptoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="66dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_below="@+id/Apptoolbar"
+            android:text="Confirmez vos détails d'expédition"
+            android:layout_margin="20dp"
+            android:textSize="29sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/textFullname_confrim_ship"
+            android:text="Nom et prénom :"
+            android:textColor="@color/black"
+            android:layout_below="@+id/txt"
+            android:layout_centerHorizontal="true"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_height="50dp"
+            android:hint="@string/fullname"
+            android:id="@+id/name_confrim_ship"
+            android:layout_below="@+id/textFullname_confrim_ship"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/input"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/cityText"
+            android:text="Ville :"
+            android:textColor="@color/black"
+            android:layout_below="@+id/name_confrim_ship"
+            android:layout_centerHorizontal="true"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_height="50dp"
+            android:hint="Ville.."
+            android:id="@+id/city_confrim_ship"
+            android:inputType="text"
+            android:layout_below="@+id/cityText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/input"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/textPh"
+            android:text="Téléphone :"
+            android:textColor="@color/black"
+            android:layout_below="@+id/address_confirm_ship"
+            android:layout_centerHorizontal="true"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_height="50dp"
+            android:inputType="phone"
+            android:hint="@string/num_ro_de_t_l_phone"
+            android:id="@+id/phone_confirm_ship"
+            android:layout_below="@+id/textPh"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/input"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/textAdrr"
+            android:text="Adresse :"
+            android:textColor="@color/black"
+            android:layout_below="@+id/city_confrim_ship"
+            android:layout_centerHorizontal="true"
+            />
+
+        <EditText
+            android:id="@+id/address_confirm_ship"
+            android:layout_width="match_parent"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_height="50dp"
+            android:hint="@string/adresse"
+            android:layout_below="@+id/textAdrr"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/input"
+            />
+        <Button
+            android:id="@+id/save__confirm_ship"
+            android:layout_width="match_parent"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/phone_confirm_ship"
+            android:background="@drawable/successbutton"
+            android:layout_marginTop="16dp"
+            android:text="Confirmer"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"/>
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

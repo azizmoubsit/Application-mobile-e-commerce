@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/product_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:foregroundGravity="center"
+            android:layout_margin="@dimen/fab_margin"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nom du produit"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:background="#E1DCDC"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_below="@+id/product_image"/>
+        <EditText
+            android:id="@+id/product_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Prix du produit"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:background="@drawable/input"
+            android:layout_below="@+id/product_name"/>
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

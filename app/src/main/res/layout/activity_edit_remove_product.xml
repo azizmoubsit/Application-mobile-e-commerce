@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditRemoveProductActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_height="wrap_content"
+        android:id="@+id/app_bar_editRemove"
+        android:layout_width="match_parent"
+        android:theme="@style/Theme.Boutique.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_editRemove"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#121212"
+            app:popupTheme="@style/Theme.Boutique.PopupOverlay">
+            <ImageView
+                android:id="@+id/close_EditRemove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="?attr/homeAsUpIndicator"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Modifier / supprimer"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_marginLeft="40dp"
+                android:textSize="17sp"
+                />
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <ImageView
+        android:id="@+id/image_edit_remove"
+        android:layout_width="270dp"
+        android:layout_height="270dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_below="@+id/app_bar_editRemove"
+        />
+
+    <EditText
+        android:id="@+id/prodName_edit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/image_edit_remove"
+        android:background="@drawable/input"
+        android:hint="Nom du produit.."
+        android:inputType="textMultiLine"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="24dp"
+        />
+
+    <EditText
+        android:id="@+id/prodDesc_edit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_below="@id/prodName_edit"
+        android:background="@drawable/input"
+        android:hint="Description du produit.."
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/prodPrice_edit"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/prodDesc_edit"
+        android:background="@drawable/input"
+        android:hint="Prix du produit.."
+        android:inputType="number"
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/editProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/successbutton"
+        android:text="Modifier le produit"
+        android:layout_below="@+id/prodPrice_edit"
+        android:textColor="@color/white"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="24dp"/>
+    <Button
+        android:id="@+id/removeProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dangerbutton"
+        android:text="Supprimer le produit"
+        android:layout_below="@+id/editProduct"
+        android:textColor="@color/white"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="24dp"/>
+
+</RelativeLayout>

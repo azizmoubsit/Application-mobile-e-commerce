@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_height="wrap_content"
+        android:id="@+id/app_bar_admin"
+        android:layout_width="match_parent"
+        android:theme="@style/Theme.Boutique.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_setting"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#121212"
+            app:popupTheme="@style/Theme.Boutique.PopupOverlay">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Table de bord"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="19sp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+            <ImageView
+                android:id="@+id/logout_admin"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logoutadmin"
+                android:padding="8dp"
+                android:layout_alignParentEnd="true"
+                />
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/addProductCardView"
+        android:layout_below="@+id/app_bar_admin"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        tools:ignore="MissingConstraints"
+        app:cardCornerRadius="15dp">
+
+        <RelativeLayout
+            android:id="@+id/seeProducts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#36C4C5">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:layout_marginLeft="40dp"
+                android:textColor="@color/black"
+                android:text="Les produits"
+                />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:foregroundGravity="center"
+                android:src="@drawable/product"
+                android:layout_marginRight="40dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/seeUsersCard"
+        android:layout_below="@+id/addProductCardView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        tools:ignore="MissingConstraints"
+        app:cardCornerRadius="15dp">
+
+        <RelativeLayout
+            android:id="@+id/seeUsers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#56c5e8">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:layout_marginLeft="40dp"
+                android:textColor="@color/black"
+                android:text="Les clients"
+                />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:foregroundGravity="center"
+                android:src="@drawable/users"
+                android:layout_marginRight="40dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/seeOrdersCard"
+        android:layout_below="@+id/seeUsersCard"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        tools:ignore="MissingConstraints"
+        app:cardCornerRadius="15dp">
+
+        <RelativeLayout
+            android:id="@+id/seeOrders"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#b2caff">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:layout_marginLeft="40dp"
+                android:textColor="@color/black"
+                android:text="Les commandes"
+                />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:foregroundGravity="center"
+                android:src="@drawable/orders"
+                android:layout_marginRight="40dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    
+
+</RelativeLayout>
